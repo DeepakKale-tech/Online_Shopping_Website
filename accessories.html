@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessories</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+         .logostyle{
+                width: 80px;
+                height: auto;
+            }
+            header {
+            background-color: #cff4fc;
+            color: #070101;
+            padding: 1rem;
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .accessory {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px;
+            width: 300px;
+            float: left;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .accessory img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="Images/f&f.jpg" alt="logo"
+                            class="img-fluid logostyle">Fast Fashion</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="men.html">Men</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="women.html"
+                                    aria-disabled="true">Women</a>
+                            </li>
+                            
+                            
+                            <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="product.html">Products</a>
+                            </li>
+                             <li class="nav-item">
+                                    <a class="nav-link "
+                                        href="Footwear.html">Footwears</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active bg-info-subtle"
+                                        href="accessories.html">Accessories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="services.html">Services</a>
+                            </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="contact.html"
+                                    aria-disabled="true">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html"
+                                    aria-disabled="true">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    <h1>Accessories </h1>
+    <div class="container">
+        <div class="accessory">
+            <img src="https://via.placeholder.com/300x200?text=Watch" alt="Watch">
+            <h2>Stylish Watch</h2>
+            <p class="price">$99.99</p>
+            <p>Elegant wristwatch with leather strap and waterproof design.</p>
+        </div>
+
+        <div class="accessory">
+            <img src="https://via.placeholder.com/300x200?text=Handbag" alt="Handbag">
+            <h2>Leather Handbag</h2>
+            <p class="price">$149.00</p>
+            <p>Premium quality handbag for everyday use or formal events.</p>
+        </div>
+
+        <div class="accessory">
+            <img src="https://via.placeholder.com/300x200?text=Sunglasses" alt="Sunglasses">
+            <h2>Classic Sunglasses</h2>
+            <p class="price">$59.50</p>
+            <p>UV-protected sunglasses with sleek modern frames.</p>
+        </div>
+    </div>
+
+</body>
+</html>

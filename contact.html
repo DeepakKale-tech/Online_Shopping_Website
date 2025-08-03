@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Page</title>
+        <style>
+        .noline{
+                text-decoration: none;
+            }
+        .logostyle {
+            width: 80px;
+            height: auto;
+        }
+        header {
+      background-color: #cff4fc;
+      color: #070101;
+      padding: 30px;
+      text-align:center;
+   }
+    </style>
+        <link href="css/productcss.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="bg-overlay"></div>
+            <!-- Header start -->
+            <header class="sticky-top">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="Images/f&f.jpg" alt="logo"
+                                class="img-fluid logostyle">Fast Fashion</a>
+                        <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarScroll"
+                            aria-controls="navbarScroll" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarScroll">
+                            <ul
+                                class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                                style="--bs-scroll-height: 100px;">
+                                <li class="nav-item">
+                                    <a class="nav-link " aria-current="page"
+                                        href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="men.html">Men</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="women.html">Women</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="product.html">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="Footwear.html">Footwears</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="accessories.html">Accessories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active bg-info-subtle"
+                                        href="contact.html">Contact
+                                        us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About
+                                        Us</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- header end -->
+            <main>
+                <section>
+                    <div class="container bg-body-tertiary">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h2>Contact us</h2>
+                                <h4>Email : fast-fashion@gmail.com</h4>
+                                <h4>Telephone : +012287663</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2>Need More Support </h2>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <p>Our dedicated Customer Service Team
+                                            are here to help! Chat with our
+                                            Virtual assistant 24/7 for answers
+                                            to frequently asked questions or
+                                            speak with a live agent if you need
+                                            more support during our opening
+                                            hours.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>Fast Fashion never sends payment
+                                            links via
+                                            WhatsApp, SMS or email. Pay only via
+                                            Fast Fashion Website/App or at
+                                            doorstep
+                                            on delivery and disregard unusual
+                                            payment requests.</p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <p>For Quicker assistance please explore
+                                            our FAQ to find the information you
+                                            need.<br> &nbsp;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <!-- Form & location -->
+                        <h3>Connect here to know more information </h3>
+                        <div class="row mb-2">
+                            <div class="col md-6">
+                                <form id="contactform"
+                                    class="border border-info"
+                                    onsubmit="return validateform()">
+                                    <div class="container ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="Name"
+                                                        class="form-label">Enter
+                                                        Your Name</label>
+                                                    <input type="text"
+                                                        class="form-control"
+                                                        id="Name" name="Name"
+                                                        placeholder="Enter Name">
+                                                    <span class="text-danger"
+                                                        id="nameerror"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="Email"
+                                                        class="form-label">Enter
+                                                        Email</label>
+                                                    <input type="email"
+                                                        class="form-control"
+                                                        id="Email" name="Email"
+                                                        placeholder="Enter Email">
+                                                    <span class="text-danger"
+                                                        id="emailerror"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="Phone"
+                                                        class="form-label">Enter
+                                                        Phone No.</label>
+                                                    <input type="number"
+                                                        class="form-control"
+                                                        id="Phone" name="Phone"
+                                                        placeholder="Enter Phone number">
+                                                    <span class="text-danger"
+                                                        id="mobileerror"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="AlternateNumber"
+                                                        class="form-label">Enter
+                                                        Alternative
+                                                        Number</label>
+                                                    <input type="number"
+                                                        class="form-control"
+                                                        id="AlternateNumber"
+                                                        name="AlternateNumber"
+                                                        placeholder="Enter Alternative Number">
+                                                    <span class="text-danger"
+                                                        id="alternate_error"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label
+                                                        for="exampleFormControlInput1"
+                                                        class="form-label">Select
+                                                        City</label>
+                                                    <select class="form-select"
+                                                        aria-label="Default select example">
+                                                        <option selected>Open
+                                                            this to
+                                                            choose</option>
+                                                        <option
+                                                            value="1">Pune</option>
+                                                        <option
+                                                            value="2">Mumbai</option>
+                                                        <option
+                                                            value="3">Nashik</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label
+                                                        for="exampleFormControlInput1"
+                                                        class="form-label">Select
+                                                        Country</label>
+                                                    <select class="form-select"
+                                                        aria-label="Default select example">
+                                                        <option selected>Open
+                                                            this to
+                                                            choose</option>
+                                                        <option
+                                                            value="1">India</option>
+                                                        <option
+                                                            value="2">UK</option>
+                                                        <option
+                                                            value="3">USA</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label for="Zipcode"
+                                                        class="form-label">Enter
+                                                        Zip</label>
+                                                    <input type="number"
+                                                        class="form-control"
+                                                        id="Zipcode"
+                                                        name="Zipcode"
+                                                        placeholder="Enter Zipcode">
+                                                    <span class="text-danger"
+                                                        id="zipcode_error"></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="mb-3">
+                                                    <label
+                                                        for="exampleFormControlInput1"
+                                                        class="form-label">Gender</label>
+                                                    <div class="form-check">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="radioDefault"
+                                                            id="radioDefault1"
+                                                            checked>
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="radioDefault1">
+                                                            Male
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input
+                                                            class="form-check-input"
+                                                            type="radio"
+                                                            name="radioDefault"
+                                                            id="radioDefault2">
+                                                        <label
+                                                            class="form-check-label"
+                                                            for="radioDefault2">
+                                                            Female
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="mb-3">
+                                                        <label
+                                                            class="form-label">Message</label>
+                                                        <textarea
+                                                            class="form-control"
+                                                            id="Message"
+                                                            name="Message"
+                                                            rows="3"></textarea>
+                                                        <span
+                                                            class="text-danger"
+                                                            id="msgerror"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="container">
+                                            <button type="submit"
+                                                class="btn btn-primary w-50 text-lg-center mb-2">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <iframe class="border border-info"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30242.485870890658!2d73.82841195996457!3d18.65004706686604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7c48ab7f353%3A0x1f7bf819cab2fc37!2sBrandhouse%20collection!5e0!3m2!1sen!2sin!4v1752077760914!5m2!1sen!2sin"
+                                    width="535" height="535" style="border:0;"
+                                    allowfullscreen loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- footer start -->
+            <footer class="bg-body-tertiary position-relative">
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-4 text-center">
+                            <a href="index.html">
+                                <img src="Images/f&f.jpg"
+                                    class="img-fluid h-50 w-50 m-2"
+                                    alt="logo here">
+                            </a>
+                            <h4>Fast & Fashion</h4>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <h3>Quick Links</h3>
+                            <a href="index.html" class=" noline">Home</a><br>
+                            <a href="services.html"
+                                class=" noline">Service</a><br>
+                            <a href="contact.html" class=" noline">Contact
+                                Us</a><br>
+                            <a href="about.html" class=" noline">About
+                                Us</a><br>
+                            <a href="men.html" class=" noline">Mens</a><br>
+                            <a href="women.html" class=" noline">Womens</a><br>
+                            <a href="product.html"
+                                class=" noline">Products</a><br>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <h3>Follow Us</h3>
+                            <a href="https://www.facebook.com/" target="_blank"
+                                class="noline ">
+                                <i class="bi bi-facebook "></i>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="30" height="30" fill="currentColor"
+                                    class="bi bi-facebook m-2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                </svg>
+                                Facebook
+                            </a>
+                            <br>
+                            <a href="https://www.instagram.com/" target="_blank"
+                                class="noline ">
+                                <i class="bi bi-instagram "></i>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="30" height="30" fill="currentColor"
+                                    class="bi bi-instagram m-2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg>
+                                Instagram
+                            </a>
+                            <br>
+                            <a href="https://www.youtube.com/" target="_blank"
+                                class="noline">
+                                <i class="bi bi-youtube "></i>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="30" height="30" fill="currentColor"
+                                    class="bi bi-youtube m-2"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                                </svg>
+                                Youtube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-body-tertiary text-white"
+                    data-bs-theme="dark">
+                    <div class="col-md-12 text-center">
+                        <h6>Copyright @ Fast & Fashion 2025</h6>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- footer end -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script>
+            function validateform()
+            {
+                // Get Form Values
+                const name = document.getElementById("Name").value.trim();
+                const email = document.getElementById("Email").value.trim();
+                const mobile = document.getElementById("Phone").value.trim();
+                const message = document.getElementById("Message").value.trim();
+                const zipcode = document.getElementById("Zipcode").value.trim();
+                const alternatenumber = document.getElementById("AlternateNumber").value.trim();
+
+                // Error span 
+                const nameError = document.getElementById("nameerror");
+                const emailError = document.getElementById("emailerror");
+                const mobileError = document.getElementById("mobileerror");
+                const messageError = document.getElementById("msgerror");
+                const zipcodeError = document.getElementById("zipcode_error");
+                const alternate_Error = document.getElementById("alternate_error");
+                
+                // Clear previous error message
+                nameError.textContent = "";
+                emailError.textContent = "";
+                mobileError.textContent = "";
+                messageError.textContent = "";
+                zipcodeError.textContent = "";
+                alternate_Error.textContent = "";
+
+                let isValid = true;
+
+                // Validate Fields
+                if (name===""){
+                    nameError.textContent = "Please Enter Your Name";
+                    isValid=false;
+                }else if(name.length<=3)
+                {
+                    nameError.textContent = "Name must be atleast 3 character";
+                    isValid=false;
+                }
+                if(email==="")
+                {
+                    emailError.textContent = "Please Enter Your Email";
+                    isValid=false;
+                }else if(!/^\S+@\S+\.\S+$/.test(email))
+                {
+                    emailError.textContent = "Email must have @ or . symbols";
+                    isValid=false;
+                }
+                if(mobile==="")
+                {
+                    mobileError.textContent = "Please Enter Your Mobile Number";
+                    isValid=false;
+                }else if(!/^\d{10}$/.test(mobile))
+                {
+                    mobileError.textContent = "Please Enter a Valid 10-digit number";
+                    isValid=false;
+                }
+                if(alternatenumber==="")
+                {
+                    alternate_Error.textContent = "Please Enter Your Mobile Number";
+                    isValid=false;
+                }else if(!/^\d{10}$/.test(mobile))
+                {
+                    alternate_Error.textContent = "Please Enter a Valid 10-digit number";
+                    isValid=false;
+                }
+                if(message==="")
+                {
+                    messageError.textContent = "Please Enter your message";
+                    isValid=false;
+                }
+                if(zipcode==="")
+                {
+                    zipcodeError.textContent = "Please Enter Your Zipcode";
+                    isValid=false;
+                }else if(!/^[1-9][0-9]{5}$/.test(zipcode))
+                {
+                    zipcodeError.textContent = "Please Enter a Valid Zipcode, Which is 6 digit and Starting Not from 0";
+                    isValid=false;
+                }
+                if(isValid){
+                    alert("Form Submitted Successfully!");
+                }
+                return isValid; // prevent form submission if invalid
+            }
+        </script>
+    </body>
+
+</html>

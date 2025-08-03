@@ -1,0 +1,56 @@
+body {
+    background-image: url(../Images/bgpic2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.4);
+    /* White overlay, 0.7 opacity */
+    pointer-events: none;
+    z-index: 0;
+}
+
+.container-fluid, main,
+header,
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    width: 18rem;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardsize {
+    min-height: 150px;
+    object-fit: contain;
+    height: 220px;
+}
+
+.noline {
+    text-decoration: none;
+}
+
+.slide-h {
+    height: 450px;
+}
+
+.transperent {
+    background-color: #00000033;
+}
+
+.logostyle {
+    width: 80px;
+    height: auto;
+}

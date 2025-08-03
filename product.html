@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clothing Products</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     .logostyle{
+                width: 80px;
+                height: auto;
+            }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(238, 233, 234);
+    }
+
+    header {
+      background-color: #cff4fc;
+      color: rgb(1, 20, 19);
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .product {
+      background-color: rgb(255, 255, 255);
+      border: 1px solid black;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .product h3 {
+      margin: 0.5rem 0;
+    }
+
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: black;
+      color: white;
+      
+    }
+  </style>
+</head>
+<body>
+  <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="Images/f&f.jpg" alt="logo"
+                          class="img-fluid logostyle">Fast Fashion</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse"
+                        id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="men.html">Men</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="women.html"
+                                    aria-disabled="true">Women</a>
+                            </li>
+                            
+                             
+                              <li class="nav-item">
+                                    <a class="nav-link active bg-info-subtle"
+                                        href="product.html">Products</a>
+                              </li>
+                               <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="Footwear.html">Footwears</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="accessories.html">Accessories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link"
+                                        href="services.html">Services</a>
+                              </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="contact.html"
+                                    aria-disabled="true">Contact us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html"
+                                    aria-disabled="true">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+<header>
+  <h1>Fast Fashion Store - Products</h1>
+</header>
+
+<main class="products">
+  <div class="product">
+    <img src="images/casual Tshirt.jpg" alt="T-Shirt">
+    <h3>Casual T-Shirt</h3>
+    <p class="price">₹499</p>
+  </div>
+
+  <div class="product">
+    <img src="images/Blue jeans.jpg" alt="Jeans">
+    <h3>Blue Jeans</h3>
+    <p class="price">₹1199</p>
+  </div>
+
+  <div class="product">
+    <img src="images/Leather jaacet.jpg" alt="Jacket">
+    <h3>Leather Jacket</h3>
+    <p class="price">₹2499</p>
+  </div>
+
+  <div class="product">
+    <img src="images/Formal Dress.jpg" alt="Dress">
+    <h3>Floral Dress</h3>
+    <p class="price">₹999</p>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Fast Fashion Store. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
