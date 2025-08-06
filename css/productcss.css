@@ -32,6 +32,12 @@ footer {
     flex-direction: column;
 }
 
+.cardcartbutton{
+    margin-left: 50px;
+}
+.cardbuybutton{
+    margin-left: 10px;
+}
 .cardsize {
     min-height: 150px;
     object-fit: contain;
