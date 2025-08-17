@@ -26,22 +26,45 @@ footer {
 }
 
 .card {
+    position: relative;
     width: 18rem;
     /* height: 100%; */
     display: flex;
     flex-direction: column;
     min-height: 300px;
 }
-
-.cardcartbutton{
-    margin-left: 50px;
-    bottom: 0;
-    height: 40px;
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+    
 }
-.cardbuybutton{
+.logospin{
+    transition: transform 0.3s;
+}
+.logospin:hover{
+    animation: spin 1.2s linear infinite;
+}
+.change{
+    transition: color 0.4s, text-shadow 0.4s;
+}
+.change:hover{
+    color: white; /* Bootstrap info color or choose your own */
+    text-shadow: 0 0 10px #0dcaf0;
+}
+.cardcartbutton{
+    position: relative;
     margin-left: 10px;
     bottom: 0;
     height: 40px;
+    z-index: 2;
+}
+.cardbuybutton{
+    position: relative;
+    margin-left: 0;
+    bottom: 0;
+    height: 40px;
+    z-index: 2;
 }
 .cardsize {
     min-height: 150px;
@@ -65,3 +88,163 @@ footer {
     width: 80px;
     height: auto;
 }
+/* ...existing code... */
+
+/* Custom Responsive Media Queries */
+@media (max-width: 1200px) {
+    .card {
+        width: 16rem;
+        min-height: 250px;
+    }
+    .slide-h {
+        height: 350px;
+    }
+    .logostyle {
+        width: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 100%;
+        min-height: 200px;
+        margin-bottom: 20px;
+    }
+    .slide-h {
+        height: 250px;
+    }
+    .logostyle {
+        width: 50px;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .carousel-caption {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container,
+    .container-fluid {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .card {
+        width: 100%;
+        min-height: 180px;
+        margin-bottom: 15px;
+    }
+    .slide-h {
+        height: 180px;
+    }
+    .logostyle {
+        width: 40px;
+    }
+    h1, h3, h4, h5 {
+        font-size: 1.2rem;
+    }
+    .carousel-caption {
+        font-size: 0.9rem;
+    }
+    footer .row > div {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container,
+    .container-fluid {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .card {
+        width: 100%;
+        min-height: 120px;
+        margin-bottom: 10px;
+    }
+    .slide-h {
+        height: 120px;
+    }
+    .logostyle {
+        width: 30px;
+    }
+    h1, h3, h4, h5 {
+        font-size: 1rem;
+    }
+    .carousel-caption {
+        font-size: 0.8rem;
+    }
+    footer .row > div {
+        margin-bottom: 10px;
+    }
+}
+
+/* ...existing code... */
+
+/* Custom Card Responsive Styles */
+.card-wrapper {
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(13,202,240,0.15);
+}
+
+@media (max-width: 1200px) {
+    .card-wrapper {
+        gap: 1.5rem;
+    }
+    .card {
+        width: 15rem !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .card-wrapper {
+        gap: 1rem;
+        justify-content: center !important;
+    }
+    .card {
+        width: 90% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-wrapper {
+        flex-direction: column !important;
+        gap: 1rem;
+        align-items: center;
+    }
+    .card {
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+    .cardsize {
+        height: 160px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100% !important;
+        margin-bottom: 1rem;
+        border-radius: 8px;
+    }
+    .cardsize {
+        height: 120px;
+    }
+}
+
+/* ...existing code... */
