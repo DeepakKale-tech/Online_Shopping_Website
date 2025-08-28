@@ -43,7 +43,7 @@ footer {
     transition: transform 0.3s;
 }
 .logospin:hover{
-    animation: spin 1.2s linear infinite;
+    animation: spin 0.20s linear;
 }
 .change{
     transition: color 0.4s, text-shadow 0.4s;
